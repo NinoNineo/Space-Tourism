@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  color: var(--white-clr);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'belefair';
+  src: url("./assets/fonts/Bellefair/Bellefair-Regular.ttf");
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --dark-blue-clr: #0B0D17;
+  --grey-clr: #D0D6F9;
+  --white-clr: #FFFFFF;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+.heading-1 {
+  font-size: 150px;
+  line-height: 170px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-size: 100px;
+  line-height: 114px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-size: 56px;
+  line-height: 64px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  font-size: 32px;
+  line-height: 36px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+  color: var(--grey-clr);
+}
+
+.heading-5 {
+  font-size: 28px;
+  line-height: 34px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
+}
+
+.subheading-1 {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+}
+
+.subheading-2 {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+  letter-spacing: 2.4;
+}
+
+.nav-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "belefair";
+  font-weight: var(--font-weight-400);
+  text-transform: uppercase;
+  letter-spacing: 2.8;
+}
+
+.body-text {
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "belefair";
+  color: var(--grey-clr);
+  font-weight: var(--font-weight-400);
+}
+
+.round-btn {
+  background-color: var(--white-clr);
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+  color: var(--dark-blue-clr);
+}
+
+.round-btn:hover {
+  box-shadow: 0 0 20px var(--grey-clr);
+  box-shadow: 0px 0px 1px 88px hsla(0, 0%, 100%, 0.1);
+}
+
+.container {
+  margin: 250px 166px 0 166px;
+}
+
+.text-container {
+  width: 34%;
+}
+
+.heading-1 {
+  color: var(--white-clr);
+  margin-top: 28px;
+}
+
+.heading-5,
+.body-text {
+  color: var(--grey-clr);
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home img {
+  width: 100%;
+}
+
+.h3-destination {
+  color: var(--white-clr);
+  margin-left: 166px;
+  margin-top: 56px;
+  margin-bottom: 50px;
+}
+
+.h3-destination span {
+  color: var(--grey-clr);
+  margin-right: 28px;
+}
+
+.text-container {
+  width: 40%;
+}
+
+.hr {
+  width: 100%;
+  margin-top: 54px;
+  background-color: #383b4b;
+  height: 1px;
+}
+
+.grey {
+  color: var(--grey-clr);
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.white {
+  color: var(--white-clr);
+}
+
+.destination {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.destination img {
+  width: 100%;
+}
+header.destination-header
+{
+    width: 100%;
+    float: right;
+    background: transparent;
+    margin-right: 322px;
+    padding: 0;
+}
+header.destination-header nav
+{
+    background: transparent;
+    backdrop-filter: blur(0);
+    float: right;
+}
+header.destination-header
+ nav ul
+{
+    gap: 52px;
+    padding: 0;
+}
+header.destination-header
+ nav ul li
+{
+    border-bottom: 5px solid transparent;
+}
+header.destination-header
+ nav ul li .link
+{
+    color: var(--white-clr);
+    padding: 12px 0;
+}
+header.destination-header
+ nav ul li span
+{
+    margin-right: 10px;
+    font-weight: var(--font-weight-700);
+    color: var(--white-clr);
+}
+header.destination-header
+ .active-a
+{
+    border-bottom: 3px solid var(--white-clr);
+}
